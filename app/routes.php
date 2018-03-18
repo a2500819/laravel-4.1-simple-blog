@@ -13,7 +13,7 @@ RouteGroup::make('auth')->before('guest')->controller('AuthorityController')->go
     # 登录1
     $route->get( 'signin'                   )->as('signin'        )->uses('getSignin'         );
     $route->post('signin'                   )                      ->uses('postSignin'        );
-    # 注册
+    # 注册23
     $route->get( 'signup'                   )->as('signup'        )->uses('getSignup'         );
     $route->post('signup'                   )                      ->uses('postSignup'        );
     # 注册成功提示用户激活
