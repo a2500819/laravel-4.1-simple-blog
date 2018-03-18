@@ -10,7 +10,7 @@ RouteGroup::make('auth')->before('guest')->controller('AuthorityController')->go
     # 退出
     $route->get('logout')->as('logout')->uses('getLogout')->beforeClear();
 
-    # 登录
+    # 登录1
     $route->get( 'signin'                   )->as('signin'        )->uses('getSignin'         );
     $route->post('signin'                   )                      ->uses('postSignin'        );
     # 注册
